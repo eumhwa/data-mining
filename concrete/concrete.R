@@ -1,10 +1,7 @@
 ########################################################################################
 ########################################################################################
-#18³â 8¿ù ÀÚ·áºÐ¼® Äõ¸®#
-
 
 #DATA : Concrete data
-#Á¦ÃâÀÚ : ±èÀ½È­
 
 ########################################################################################
 ########################################################################################
@@ -23,7 +20,7 @@ names(dt)
 
 
 #---------------------------------------------------------------------------------------------------------
-#¿¬¼ÓÇüº¯¼ö ºÐÆ÷ È®ÀÎ   
+#ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ È®ï¿½ï¿½   
 ggplot(dt, aes(Cement)) + 
   geom_histogram(position="identity", fill="skyblue", alpha=.5) +
   theme(axis.title=element_text(size=20))
@@ -133,12 +130,12 @@ best_pram <- cv.trees$size[min_idx]
 prune.trees <- prune.tree(tree, best=best_pram)
 
 
-plot(prune.trees);text(prune.trees, pretty=0) #age, cement, water interaction°í·Á
+plot(prune.trees);text(prune.trees, pretty=0) #age, cement, water interactionï¿½ï¿½ï¿½ï¿½
 
 
 
 #---------------------------------------------------------------------------------------------------------
-#interaction Ãß°¡
+#interaction ï¿½ß°ï¿½
 
 form <- as.formula(Concrete.compressive.strength~.+Age*Cement)
 tr_int <- model.matrix(form, data=tr)[,-1]
