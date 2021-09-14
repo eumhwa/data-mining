@@ -12,7 +12,7 @@
 |Cuisine|Type of cuisine (response variable)|
 |ingredients|List of ingredients|
 
-![](Aspose.Words.bfa5c9b9-261c-4d0b-9006-b5bfd968380a.001.png)
+![](./plots/A001.png)
 
 **그림  SEQ 그림 \\* ARABIC 1. 반응변수(cuisine) 범주 별 빈도수**
 
@@ -20,7 +20,7 @@
 
 원시 데이터를 일반적인 Tabular 데이터 형태로 변환하기 위해서는 ingredients변수의 전처리가 필요합니다. 따라서 각각의 ID를 document로 보고 ingredients 변수 내부의 각 원소들을 term으로 보아 Document-Term 행렬 형태로 변환하였습니다. 우선 리스트 타입의 ingredients 변수를 풀어 long-format 형태의 데이터로 변환 후, 띄어쓰기 제거와 소문자로 통일 등의 텍스트 전처리를 했습니다. 이후 wide-format으로 데이터를 변형하여 원하는 형태의 데이터를 얻었습니다. 
 
-![](Aspose.Words.bfa5c9b9-261c-4d0b-9006-b5bfd968380a.002.png)
+![](./plots/A002.png)
 
 **그림  SEQ 그림 \\* ARABIC 2. 전처리 과정**
 
@@ -32,7 +32,7 @@
 
 초기에는 인접한 문화권(지역) 기준으로 군집분석을 통해 파생변수를 생성하려 하였으나, 모든 변수가 0과 1로 이루어진 이항변수라 흔히 사용되는 군집분석 방법을 적용하기에는 알맞지 않다고 생각했습니다. 다른 방법을 고려해본 결과, k-nearest neighborhood(k-NN)을 통해 파생변수를 만들었습니다. 우선 반응변수(cuisine)의 각 범주 별 ingredient 변수들의 평균을 범주의 중심점(centroid)으로 정의하였습니다. 이를 통해 0과 1 사이에 연속적인 값을 갖는 20개의 중심점 벡터를 생성하였고, 각 데이터와의 거리를 계산하여 가장 가까운 중심점의 범주로 파생변수를 생성했습니다. 이 단계에서 유의할 점은 중심점을 계산할 때, 시험데이터의 정보가 포함되지 않도록 학습데이터 내에서 계산을 해야 하는 것입니다. 중심점과의 거리를 계산할 때는 맨하탄 거리(Manhattan distance)와 유클리디안 거리(Euclidean distance)를 고려했는데, 유클리디안 거리의 성능이 더 좋아 이를 선택하여 적용했습니다. 성능 평가는 생성한 파생변수와 반응변수의 일치성을 기준으로 하였는데, 유클리디안 거리를 사용했을 때 학습데이터에서 약 49.8% 일치했습니다. 반응변수의 범주가 20개임을 고려하였을 때, 굉장히 높은 수치임을 알 수 있습니다. 
 
-![](Aspose.Words.bfa5c9b9-261c-4d0b-9006-b5bfd968380a.003.png)
+![](./plots/A003.png)
 
 **그림  SEQ 그림 \\* ARABIC 3. 파생변수(cluster\_id)와 반응변수(cuisine) 일치성에 대한 히트맵**
 

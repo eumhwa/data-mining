@@ -24,13 +24,13 @@
 1. 데이터 탐색
    8개의 독립변수는 모두 연속형 변수이다. 각 변수에 대해 단변량 분포를 살펴보면 아래 그림1 과 같다.
 
-![](Aspose.Words.a5f86a8e-f35b-487f-9c94-8fbc1b0553f1.001.png)            ![](Aspose.Words.a5f86a8e-f35b-487f-9c94-8fbc1b0553f1.002.png)
+![](./plots/A001.png=100x100)            ![](./plots/A002.png=100x100)
 
-![](Aspose.Words.a5f86a8e-f35b-487f-9c94-8fbc1b0553f1.003.png)             ![](Aspose.Words.a5f86a8e-f35b-487f-9c94-8fbc1b0553f1.003.png)
+![](./plots/A003.png=100x100)             ![](./plots/A003.png=100x100)
 
-![](Aspose.Words.a5f86a8e-f35b-487f-9c94-8fbc1b0553f1.001.png)             ![](Aspose.Words.a5f86a8e-f35b-487f-9c94-8fbc1b0553f1.003.png)
+![](./plots/A001.png)             ![](./plots/A003.png=100x100)
 
-![](Aspose.Words.a5f86a8e-f35b-487f-9c94-8fbc1b0553f1.004.png)             ![](Aspose.Words.a5f86a8e-f35b-487f-9c94-8fbc1b0553f1.005.png)
+![](./plots/A004.png=100x100)             ![](./plots/A005.png=100x100)
 
 그림 1. 독립변수 히스토그램
 
@@ -38,7 +38,7 @@
 
 다음의 그림2 는 반응변수와 독립변수간의 산점도 중 특징이 보이는 두 개의 그래프다.
 
-![](Aspose.Words.a5f86a8e-f35b-487f-9c94-8fbc1b0553f1.006.png) ![](Aspose.Words.a5f86a8e-f35b-487f-9c94-8fbc1b0553f1.007.png)
+![](./plots/A006.png) ![](./plots/A007.png)
 
 그림2. 독립변수와 반응변수의 산점도
 
@@ -49,7 +49,7 @@
 
 앞서 데이터소개 부분에서 언급했듯이 많은 연구를 통해 콘크리트의 강도는 물과 시멘트 이외의 성분에도 많은 영향을 받는다고 알려져 있다. 이 사실을 고려해보면 변수들 간의 유의한 교호작용이 존재할 수 있다. 따라서 의사결정나무를 통해 교호작용을 파악해 보았고, 그 결과는 아래 그림3과 같다.
 
-![](Aspose.Words.a5f86a8e-f35b-487f-9c94-8fbc1b0553f1.008.png)
+![](./plots/A008.png)
 
 그림3. 의사결정나무 결과
 
@@ -84,7 +84,7 @@
 
 다음으로 Random Forest를 적합했다. Tuning parameter 중 subsampling의 수는 300번으로 고정해 두었고, 변수의 개수는 grid search를 통해 튜닝하였다. 적합 후 변수중요도는 아래 그림 4 와 같다. 추가한 교호작용이 가장 중요함을 알 수 있었다.
 
-![](Aspose.Words.a5f86a8e-f35b-487f-9c94-8fbc1b0553f1.009.png)
+![](./plots/A009.png)
 
 그림4 Random Forest 변수중요도
 
@@ -92,7 +92,7 @@
 
 회귀분석과 Random Forest의 test RMSE를 비교했을 때, RF의 성능이 많이 좋다는 것을 알 수 있었다. 이를 통해 비선형적인 특징이 중요할 수 있다는 직관을 얻었고, 이에 따라 딥러닝 모형을 적합해 보았다. DNN 적합 결과 변수중요도는 아래 그림5 와 같다.
 
-![](Aspose.Words.a5f86a8e-f35b-487f-9c94-8fbc1b0553f1.010.png)
+![](./plots/A010.png)
 
 그림5. DNN 변수중요도
 
