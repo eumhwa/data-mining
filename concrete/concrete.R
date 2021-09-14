@@ -20,7 +20,6 @@ names(dt)
 
 
 #---------------------------------------------------------------------------------------------------------
-#���������� ���� Ȯ��   
 ggplot(dt, aes(Cement)) + 
   geom_histogram(position="identity", fill="skyblue", alpha=.5) +
   theme(axis.title=element_text(size=20))
@@ -135,7 +134,7 @@ plot(prune.trees);text(prune.trees, pretty=0) #age, cement, water interaction�
 
 
 #---------------------------------------------------------------------------------------------------------
-#interaction �߰�
+#interaction
 
 form <- as.formula(Concrete.compressive.strength~.+Age*Cement)
 tr_int <- model.matrix(form, data=tr)[,-1]
