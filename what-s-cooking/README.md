@@ -27,7 +27,7 @@
 
 원시 데이터를 일반적인 Tabular 데이터 형태로 변환하기 위해서는 ingredients변수의 전처리가 필요합니다. 따라서 각각의 ID를 document로 보고 ingredients 변수 내부의 각 원소들을 term으로 보아 Document-Term 행렬 형태로 변환하였습니다. 우선 리스트 타입의 ingredients 변수를 풀어 long-format 형태의 데이터로 변환 후, 띄어쓰기 제거와 소문자로 통일 등의 텍스트 전처리를 했습니다. 이후 wide-format으로 데이터를 변형하여 원하는 형태의 데이터를 얻었습니다. 
 
-<p align="center"><img src="./plots/A002.png" width="800" height="350"></p>
+<p align="center"><img src="./plots/A002.png" width="700" height="200"></p>
 <div align="center">
 
 그림2. 전처리 과정
