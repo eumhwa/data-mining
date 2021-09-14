@@ -1,8 +1,6 @@
 #------------------------------------------------------------------------------#
 
 # Title : Data Handling
-# Author : EH
-
 #------------------------------------------------------------------------------#
 rm(list=ls())
 
@@ -14,7 +12,7 @@ library(lattice)
 library(ranger)
 
 #Working directory
-setwd("C://Users//PC2//Desktop//SKT//data")
+setwd("C://Users//PC2//Desktop//data")
 
 #------------------------------------------------------------------------------#
 ##1. Loading dataset

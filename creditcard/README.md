@@ -1,8 +1,4 @@
-﻿[2018.08 자료분석 쿼리]
-
-22172133 김음화
-
-**Credit card data**
+﻿**Credit card data**
 
 1) 데이터 소개
 

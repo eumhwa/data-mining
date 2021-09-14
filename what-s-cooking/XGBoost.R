@@ -1,8 +1,6 @@
 #------------------------------------------------------------------------------#
 
 # Title : XGBoost
-# Author : EH
-
 #------------------------------------------------------------------------------#
 rm(list=ls())
 
@@ -12,7 +10,7 @@ library(caret)
 library(xgboost)
 
 #Working directory
-setwd("C://Users//PC2//Desktop//SKT//data")
+setwd("C://Users//PC2//Desktop//data")
 
 load(file="Data_Handling.Rdata")
 #------------------------------------------------------------------------------#
