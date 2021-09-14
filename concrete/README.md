@@ -75,6 +75,9 @@
 |Blast.Furnace.Slag|9.742e-02|Fine.Aggregate|1.402e-02|
 |Fly.Ash|7.842e-02|Age|1.868e-01|
 |Water|-1.526e-01|Cement:Age|-2.250e-04|
+</div>
+<div align="center">
+
 표1. 회귀분석 결과 회귀계수
 </div>
 
@@ -89,6 +92,9 @@
 |Blast.Furnace.Slag|8.341e-02|Fine.Aggregate|x|
 |Fly.Ash|6.460e-02|Age|1.866e-01|
 |Water|-2.158e-01|Cement:Age|-2.261e-04|
+</div>
+<div align="center">
+
 표2. Backward Elimination 후 회귀분석 결과 회귀계수
 </div>
 
