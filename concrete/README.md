@@ -24,13 +24,13 @@
 1. 데이터 탐색
    8개의 독립변수는 모두 연속형 변수이다. 각 변수에 대해 단변량 분포를 살펴보면 아래 그림1 과 같다.
 
-![](./plots/A001.png=100x100)            ![](./plots/A002.png=100x100)
+![](./plots/A001.png){: width="250", height="250}            ![](./plots/A002.png){: width="250", height="250}
 
-![](./plots/A003.png=100x100)             ![](./plots/A003.png=100x100)
+![](./plots/A003.png){: width="250", height="250}             ![](./plots/A003.png){: width="250", height="250}
 
-![](./plots/A001.png)             ![](./plots/A003.png=100x100)
+![](./plots/A001.png){: width="250", height="250}             ![](./plots/A003.png){: width="250", height="250}
 
-![](./plots/A004.png=100x100)             ![](./plots/A005.png=100x100)
+![](./plots/A004.png){: width="250", height="250}             ![](./plots/A005.png){: width="250", height="250}
 
 그림 1. 독립변수 히스토그램
 
