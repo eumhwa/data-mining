@@ -81,7 +81,7 @@
 분석에 사용된 모형은 로지스틱 회귀모형과 랜덤 포레스트이며, 이 모형의 test 결과는 아래 표 2와 같다.
 <div align="center">
 
-||Original||Under Sampling||SMOTE:||
+||Original||Under Sampling||SMOTE||
 | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
 ||ACC|AUC|ACC|AUC|ACC|AUC|
 |Logistic|0.796|0.7733|0.8203|0.7719|0.817|0.7705|
